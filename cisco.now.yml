@@ -1,10 +1,10 @@
 plugin: servicenow.servicenow.now
 table: cmdb_ci_netgear
-fields: [name,manufacturer,sys_tags,ip_address,attributes]
+fields: [name,manufacturer,sys_tags,ip_address,u_operating_system]
 selection_order: [name,ip_address]
 compose:
   sn_tags: sn_sys_tags.replace(" ", "").split(',')
-  ansible_network_os: sn_attributes
+  ansible_network_os: sn_u_operating_system
   ansible_host: sn_ip_address
 keyed_groups:
   - key: sn_tags | lower
