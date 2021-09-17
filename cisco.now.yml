@@ -13,4 +13,3 @@ keyed_groups:
     separator: '_'
   - key: sn_tags | lower
     prefix: 'tag'
-    separator: '_'
