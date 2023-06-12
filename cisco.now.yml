@@ -13,3 +13,4 @@ keyed_groups:
     separator: '_'
   - key: sn_tags | lower
     prefix: 'tag'
+  - key: sn_manufacturer | lower
