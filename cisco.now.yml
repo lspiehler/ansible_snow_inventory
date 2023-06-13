@@ -9,10 +9,10 @@ compose:
   ansible_host: sn_ip_address
 keyed_groups:
   - key: sn_groups | lower
-    prefix: 'snow'
+    prefix: '_snow'
     separator: '_'
   - key: sn_tags | lower
-    prefix: 'tag'
+    prefix: '_tag'
   - key: sn_manufacturer | lower
-    prefix: 'vendor'
+    prefix: '_vendor'
     separator: '_'
